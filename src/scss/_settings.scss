@@ -1,0 +1,155 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  overflow-anchor: none;
+
+  @include lg {
+    font-size: 14px;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+
+  /* &:hover {
+    color: var(--color-green);
+    transition: color 0.3s;
+  } */
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0 0 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+button {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+input {
+  outline: none;
+}
+
+.is-outer {
+  position: relative !important; // stylelint-disable-line declaration-no-important
+  left: -9999px !important; // stylelint-disable-line declaration-no-important
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.stop-scroll {
+  @include stop-scroll;
+}
+
+.is-hidden {
+  display: none !important; // stylelint-disable-line declaration-no-important
+}
+
+.for-mobile {
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+}
+
+.error {
+  border: 2px #ff4019 solid !important; // stylelint-disable-line declaration-no-important
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+// .btn-reset {
+//   border: none;
+//   padding: 0;
+//   background: transparent;
+//   cursor: pointer;
+// }
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+.title {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-deep-sapphire);
+  margin-bottom: 50px;
+
+  @include sm {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+.subtitle {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 24px;
+  line-height: 1.2;
+  color: var(--color-deep-sapphire);
+  text-transform: uppercase;
+  margin-bottom: 40px;
+
+  @include sm {
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+}

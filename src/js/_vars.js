@@ -1,0 +1,23 @@
+export default {
+  $window: window,
+  $document: document,
+  $html: document.documentElement,
+  $body: document.body,
+  $wrapper: document.querySelector('.wrapper'),
+  $navLinks: document.querySelectorAll('.nav__link'),
+  $navMobileLinks: document.querySelectorAll('.nav-mobile__link'),
+  $navMobile: document.querySelector('.nav-mobile'),
+  $headerBars: document.querySelector('.header__bars'),
+  $navMobileClose: document.querySelector('.nav-mobile__close'),
+  $faqQuestions: document.querySelectorAll('.faq__question'),
+  $seviceButtons: document.querySelectorAll('.service__button'),
+  $orderModal: document.getElementById('orderModal'),
+  $orderModalForm: document.querySelector('.order-modal__form'),
+  $thanksModal: document.getElementById('thanksModal'),
+  $portfolioSlider: document.querySelector('.portfolio__slider'),
+  $targetCustomizationButton: document.querySelector('.target-customization__button'),
+  $scrollTop: document.querySelector('.scroll-top'),
+  $inputTypeTel: document.querySelectorAll('input[type="tel"]'),
+  $ctaForm: document.querySelector('.cta__form'),
+  $menuFooterLinks: document.querySelectorAll('.menu-footer__link')
+}

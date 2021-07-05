@@ -1,0 +1,41 @@
+<div class="modal fade" id="orderModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content order-modal">
+      <button class="modal__close" data-bs-dismiss="modal">
+        <svg>
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <div class="modal__title">
+        Хочу пакет L
+      </div>
+      <form class="order-modal__form">
+        <input type="text" name="name" class="order-modal__input" placeholder="Ваше имя" required>
+        <input type="tel" name="phone" class="order-modal__input" placeholder="Номер телефона" required>
+        <input type="text" name="instagram_link" class="order-modal__input" placeholder="Ссылка на ваш инстаграм"
+          required>
+        <input type="hidden" name="packet" value="">
+        <button type="submit" class="order-modal__button">Отправить</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="thanksModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content thanks-modal">
+      <button class="modal__close" data-bs-dismiss="modal">
+        <svg>
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <div class="modal__title">
+        Ваш запрос отправлен!
+      </div>
+      <div class="thanks-modal__text">
+        В ближайшее время я свяжусь с Вами для обсуждения деталей сотрудничества.
+        Спасибо за ожидание, хорошего дня!
+      </div>
+    </div>
+  </div>
+</div>

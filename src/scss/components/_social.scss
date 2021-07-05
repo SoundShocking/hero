@@ -1,0 +1,49 @@
+.social {
+  $self: &;
+
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 12px;
+
+      @include sm {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.5;
+      transition: opacity 0.3s;
+    }
+
+    svg {
+      width: 50px;
+      height: 50px;
+      display: block;
+
+      @include md {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  &--hero {
+    #{$self}__item {
+      &:not(:last-child) {
+        margin: 0 0 10px;
+
+        @include md {
+          margin: 0 20px 0 0;
+        }
+      }
+    }
+  }
+}
